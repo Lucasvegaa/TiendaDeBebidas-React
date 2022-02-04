@@ -1,5 +1,5 @@
 
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CartWidget } from '../cartWidget/cartWidget.';
 import {Nav} from 'react-bootstrap';
 export const NavBar = () => {
     return (
@@ -16,7 +16,7 @@ export const NavBar = () => {
                     <Nav.Link eventKey="link-2" className='header-link'>Whisky</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2"><ShoppingCartIcon/></Nav.Link>
+                    <Nav.Link eventKey="link-2"><CartWidget/></Nav.Link>
                 </Nav.Item>
             </Nav>
         </header>
