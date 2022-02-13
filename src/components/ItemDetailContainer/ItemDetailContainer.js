@@ -8,18 +8,14 @@ export const ItemDetailContainer = () => {
 
     const [loading, setLoading] = useState(false)
     const [item, setItem] = useState(null)
-
     const { itemId } = useParams()
-    console.log(itemId)
-    console.log(item)
-    
 
     useEffect(() => {
         setLoading(true)
 
         pedirDatos()
             .then((res) => {
-                setItem(res.find((el)=> el.id === Number(itemId)))
+                setItem(res.find((el) => el.id === Number(itemId)))
 
             })
             .finally(() => {
@@ -28,17 +24,15 @@ export const ItemDetailContainer = () => {
     }
         , [])
 
-
-
     return (
         <>
-        <div className="container my-5">
-            {
-                loading
-                ? <SpinnerLoading/>
-                : <ItemDetail {...item}/>
-            }
-        </div>
+            <div className="container my-5">
+                {
+                    loading
+                        ? <SpinnerLoading />
+                        : <ItemDetail {...item} />
+                }
+            </div>
         </>
     )
 };

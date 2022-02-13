@@ -5,7 +5,6 @@ export const ItemDetail = ({id, nombre, precio, img, desc,categoria, stock}) => 
             <img src={img}></img>
             <p>{desc}</p>
             <h5>Precio:{precio}</h5>
-
         </div>
 
 

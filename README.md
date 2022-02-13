@@ -1,3 +1,13 @@
+# Proyecto: Brooklin Tienda de Bebidas
+## Autor: Vega Lucas Damian
+## Proyecto para el curso de React de CoderHouse.
+### Web de tienda de bebidas en general. Para desarrollar este proyecto se utilizo React, HTML, CSS, React-Bootstrap, SASS.
+
+[LinkedIn](https://www.linkedin.com/in/lucas-vega-39aa15195/)
+[GitHub](https://github.com/Lucasvegaa)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

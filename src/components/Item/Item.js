@@ -9,7 +9,6 @@ export const Item = ( {id, nombre, precio, img, desc} ) => {
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{nombre}</Card.Title>
-               
                 <Card.Text>
                     Precio: ${precio}
                 </Card.Text>

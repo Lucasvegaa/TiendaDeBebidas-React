@@ -1,28 +1,25 @@
 import { useEffect, useState } from "react"
 import { ItemList } from "../ItemList/ItemList"
-import {Spinner} from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 import { useParams } from "react-router-dom";
-import { pedirDatos} from "../../helpers/pedirDatos"
+import { pedirDatos } from "../../helpers/pedirDatos"
 import { SpinnerLoading } from "../SpinnerLoading/SpinnerLoading";
 
 
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(false)
-    const {catId} = useParams();
-    console.log(catId)
-
-    
+    const { catId } = useParams();
 
     useEffect(() => {
         setLoading(true)
 
         pedirDatos()
             .then((res) => {
-                if(catId){
+                if (catId) {
 
-                    setProductos(res.filter((el)=> el.categoria === catId))
-                }else{
+                    setProductos(res.filter((el) => el.categoria === catId))
+                } else {
                     setProductos(res)
                 }
             })
@@ -32,14 +29,13 @@ export const ItemListContainer = () => {
             .finally(() => {
                 setLoading(false)
             })
-
     }, [catId])
 
     return (
         <>
             {
                 loading
-                    ? <SpinnerLoading/>
+                    ? <SpinnerLoading />
                     : <ItemList productos={productos} />
             }
         </>
