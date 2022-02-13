@@ -1,22 +1,23 @@
 
 import { CartWidget } from '../cartWidget/cartWidget.';
-import {Nav} from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
     return (
         <header className="header">
-            <h1>BROOKLYN</h1>
-            <Nav defaultActiveKey="/home" as="ul" className='header-nav'>
+            <Link to="/" className='linkNV'><h1>BROOKLYN</h1> </Link>
+            <Nav  as="ul" className='header-nav'>
                 <Nav.Item as="li">
-                    <Nav.Link href="/home" className='header-link'>Vinos</Nav.Link>
+                    <Link to="/productos/vinos" className='header-link linkNV' >Vinos</Link>
                 </Nav.Item>
                 <Nav.Item as="li" >
-                    <Nav.Link eventKey="link-1" className='header-link'>Cerveza</Nav.Link>
+                    <Link to="/productos/cerveza" className='header-link linkNV' >Cerveza</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2" className='header-link'>Whisky</Nav.Link>
+                    <Link to="/productos/whisky" className='header-link linkNV'>Whisky</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2"><CartWidget/></Nav.Link>
+                    <Link to="/" className='header-link linkNV'><CartWidget /></Link>
                 </Nav.Item>
             </Nav>
         </header>

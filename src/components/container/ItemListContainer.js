@@ -2,11 +2,15 @@ import { useEffect, useState } from "react"
 import { ItemList } from "../ItemList/ItemList"
 import { stock } from "../../data/stock"
 import {Spinner} from 'react-bootstrap';
+import { useParams } from "react-router-dom";
+
 
 
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(false)
+    const {catId} = useParams();
+    console.log(catId)
 
     const pedirDatos = () => {
         return new Promise( (resolve, reject) => {
