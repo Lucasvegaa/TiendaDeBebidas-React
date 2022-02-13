@@ -3,7 +3,6 @@ import { NavBar } from "./components/NavBar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/styles.scss'
 import {Route, BrowserRouter, Routes, Navigate} from 'react-router-dom'
-import{Contacto} from './components/Contacto'
 
 
 function App() {

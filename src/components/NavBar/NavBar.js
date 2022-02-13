@@ -8,7 +8,7 @@ export const NavBar = () => {
             <Link to="/" className='linkNV'><h1>BROOKLYN</h1> </Link>
             <Nav  as="ul" className='header-nav'>
                 <Nav.Item as="li">
-                    <Link to="/productos/vinos" className='header-link linkNV' >Vinos</Link>
+                    <Link to="/productos/vino" className='header-link linkNV' >Vinos</Link>
                 </Nav.Item>
                 <Nav.Item as="li" >
                     <Link to="/productos/cerveza" className='header-link linkNV' >Cerveza</Link>

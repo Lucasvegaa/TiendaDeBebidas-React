@@ -6,7 +6,7 @@ export const stock = [
         precio: 565,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/ESPUMANTE_Extra-Brut__1000x2048_6c227539-6708-4e08-ace1-fc70ef26c2f0_1024x1024.png?v=1636729610',
         stock: 50,
-        categoria:"Vino"
+        categoria:"vino"
     },
     {
         nombre: 'Vino Estancia Mendoza Cabernet Sauvignon Roble 750ml',
@@ -15,7 +15,7 @@ export const stock = [
         precio: 600,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/EMCabernetSauvignonRoble_1024x1024.png?v=1622743455',
         stock: 50,
-        categoria:"Vino"
+        categoria:"vino"
     },
     {
         nombre: 'Vino Finca Magnolia Cabernet Sauvignon',
@@ -24,7 +24,7 @@ export const stock = [
         precio: 550,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/FincaMagnoliaCabernetSauvignon_1024x1024.png?v=1630599359',
         stock: 50,
-        categoria:"Vino"
+        categoria:"vino"
     },
     {
         nombre: 'Vino Estancia Mendoza Sauvignon Blanc 750ml',
@@ -33,7 +33,7 @@ export const stock = [
         precio: 605,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/EMSauvignonBlanc_1000x1200.png?v=1628109392',
         stock: 50,
-        categoria:"Vino"
+        categoria:"vino"
     },
     {
         nombre: 'Vino Texto Súbito Cabernet Sauvignon-Petit Verdot 750ml',
@@ -42,7 +42,7 @@ export const stock = [
         precio: 2550,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/TextoSubitoCabernetSauvignon_1000x1200.png?v=1622748002',
         stock: 50,
-        categoria:"Vino"
+        categoria:"vino"
     },
     {
         nombre: 'Cerveza Temple Orange Lager Lata 473ml',
@@ -51,7 +51,7 @@ export const stock = [
         precio: 300,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/OrangeLager_1024x1024.png?v=1637341392',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"cerveza"
     },
     {
         nombre: 'Cerveza Patagonia Bohemian Pilsener Lata 410ml',
@@ -60,7 +60,7 @@ export const stock = [
         precio: 226,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/Patagonia_BohemianPilsener_410ml_1000x1000px_1024x1024.png?v=1638822629',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"cerveza"
     },
     {
         nombre: 'Cerveza DAB DARK Lata 500ml',
@@ -69,7 +69,7 @@ export const stock = [
         precio: 450,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/Dab_Dark_1000x1000px-min_1024x1024.png?v=1644526096',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"cerveza"
     },
     {
         nombre: 'Cerveza DAB MAIBOCK 500ml',
@@ -78,7 +78,7 @@ export const stock = [
         precio: 450,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/Dab_Maibock_1000x1000px-min_1024x1024.png?v=1644526184',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"cerveza"
     },
     {
         nombre: 'CERVEZA BRAHMA EDICIÓN LIMITADA BXNM LATA 473ML',
@@ -87,7 +87,7 @@ export const stock = [
         precio: 190,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/Brahma_Duki_1000x1000px-LOW_1024x1024.png?v=1639058079/',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"cerveza"
     },
     {
         nombre: 'Whisky Whyte & Mackay Special 700ml',
@@ -96,6 +96,6 @@ export const stock = [
         precio: 4290,
         img: 'https://cdn.shopify.com/s/files/1/1103/5152/products/waytemackay__1_1000x1200.png?v=1636552479',
         stock: 50,
-        categoria:"Cerveza"
+        categoria:"whisky"
     },
 ]

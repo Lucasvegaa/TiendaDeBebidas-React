@@ -25,7 +25,12 @@ export const ItemListContainer = () => {
 
         pedirDatos()
             .then((res) => {
-                setProductos(res)
+                if(catId){
+
+                    setProductos(res.filter((el)=> el.categoria === catId))
+                }else{
+                    setProductos(res)
+                }
             })
             .catch((err) => {
                 console.log(err)
@@ -34,7 +39,7 @@ export const ItemListContainer = () => {
                 setLoading(false)
             })
 
-    }, [])
+    }, [catId])
 
     return (
         <>
