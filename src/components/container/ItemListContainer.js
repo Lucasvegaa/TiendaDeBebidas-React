@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { ItemList } from "../ItemList/ItemList"
-import { stock } from "../../data/stock"
 import {Spinner} from 'react-bootstrap';
 import { useParams } from "react-router-dom";
-
+import { pedirDatos} from "../../helpers/pedirDatos"
+import { SpinnerLoading } from "../SpinnerLoading/SpinnerLoading";
 
 
 export const ItemListContainer = () => {
@@ -12,13 +12,7 @@ export const ItemListContainer = () => {
     const {catId} = useParams();
     console.log(catId)
 
-    const pedirDatos = () => {
-        return new Promise( (resolve, reject) => {
-            setTimeout(() => {
-                resolve(stock)
-            }, 2000)
-        })
-    }
+    
 
     useEffect(() => {
         setLoading(true)
@@ -45,9 +39,7 @@ export const ItemListContainer = () => {
         <>
             {
                 loading
-                    ? <Spinner animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                  </Spinner>
+                    ? <SpinnerLoading/>
                     : <ItemList productos={productos} />
             }
         </>
