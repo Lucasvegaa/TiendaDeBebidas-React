@@ -6,6 +6,7 @@ import { SpinnerLoading } from "../SpinnerLoading/SpinnerLoading";
 
 
 export const ItemListContainer = () => {
+
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(false)
     const { catId } = useParams();
