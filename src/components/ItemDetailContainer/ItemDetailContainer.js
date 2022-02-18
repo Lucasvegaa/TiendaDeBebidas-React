@@ -22,7 +22,7 @@ export const ItemDetailContainer = () => {
                 setLoading(false)
             })
     }
-        , [])
+        , [itemId])
 
     return (
         <>
