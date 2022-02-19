@@ -17,7 +17,7 @@ export const NavBar = () => {
                     <Link to="/productos/whisky" className='header-link linkNV'>Whisky</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Link to="/" className='header-link linkNV'><CartWidget /></Link>
+                    <Link to="/cart" className='header-link linkNV'><CartWidget /></Link>
                 </Nav.Item>
             </Nav>
         </header>
